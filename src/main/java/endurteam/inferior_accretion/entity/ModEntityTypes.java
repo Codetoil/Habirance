@@ -11,7 +11,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
 public class ModEntityTypes {
-    public static final DeferredRegister<EntityType<?>> ENTITY_TYPES = DeferredRegister.create(ForgeRegistries.ENTITIES, InferiorAccretion.MOD_ID);
+    public static final DeferredRegister<EntityType<?>> ENTITY_TYPES = DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, InferiorAccretion.MOD_ID);
 
     public static final RegistryObject<EntityType<UndeadHog>> UNDEAD_HOG = ENTITY_TYPES.register("undead_hog",() ->
             EntityType.Builder.of(UndeadHog::new, MobCategory.MONSTER)

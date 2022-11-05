@@ -5,7 +5,6 @@ import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
 
 public class ModFoodItems {
-    @SuppressWarnings("unused")
     public static final FoodProperties ROTTEN_HIDE = (
             new FoodProperties.Builder())
             .nutrition(0)

@@ -5,7 +5,7 @@ import com.mojang.serialization.codecs.RecordCodecBuilder;
 import net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration;
 import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvider;
 
-public record SimpleBlockWithBambooConfiguration(float probability, BlockStateProvider toPlace) implements FeatureConfiguration
+public record SimpleBlockWithBambooConfiguration(Float probability, BlockStateProvider toPlace) implements FeatureConfiguration
 {
 	public static final Codec<SimpleBlockWithBambooConfiguration> CODEC = RecordCodecBuilder.create((instance) ->
 			instance.group(

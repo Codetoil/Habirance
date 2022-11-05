@@ -3,7 +3,6 @@ package endurteam.inferior_accretion.world.level.levelgen.feature;
 import endurteam.inferior_accretion.InferiorAccretion;
 import net.minecraft.core.Direction;
 import net.minecraft.core.Registry;
-import net.minecraft.data.worldgen.biome.OverworldBiomes;
 import net.minecraft.world.level.levelgen.VerticalAnchor;
 import net.minecraft.world.level.levelgen.blockpredicates.BlockPredicate;
 import net.minecraft.world.level.levelgen.placement.*;
@@ -18,7 +17,6 @@ public class ModPlacedFeatures {
     public static final DeferredRegister<PlacedFeature> PLACED_FEATURES =
             DeferredRegister.create(Registry.PLACED_FEATURE_REGISTRY, InferiorAccretion.MOD_ID);
 
-    @SuppressWarnings("unused")
     public static final RegistryObject<PlacedFeature> ALABASTER_PLACED = PLACED_FEATURES.register("alabaster_placed",
             () -> new PlacedFeature(ModConfiguredFeatures.ALABASTER.getHolder().orElseThrow(),
                             //veins per chunk
@@ -28,7 +26,6 @@ public class ModPlacedFeatures {
                                     BiomeFilter.biome()))
                 );
 
-    @SuppressWarnings("unused")
     public static final RegistryObject<PlacedFeature> SERENE_PLACED = PLACED_FEATURES.register("serene_placed",
             () -> new PlacedFeature(ModConfiguredFeatures.SERENE.getHolder().orElseThrow(),
                             //veins per chunk
@@ -37,7 +34,6 @@ public class ModPlacedFeatures {
                                     HeightRangePlacement.triangle(VerticalAnchor.absolute(45), VerticalAnchor.absolute(62)),
                                     BiomeFilter.biome())));
 
-    @SuppressWarnings("unused")
     public static final RegistryObject<PlacedFeature> DRYSTONE_PLACED = PLACED_FEATURES.register("drystone_placed",
             () -> new PlacedFeature(ModConfiguredFeatures.DRYSTONE.getHolder().orElseThrow(),
                             //veins per chunk
@@ -63,7 +59,6 @@ public class ModPlacedFeatures {
                             HeightRangePlacement.uniform(VerticalAnchor.absolute(-53), VerticalAnchor.absolute(20)),
                             BiomeFilter.biome())));
 
-    @SuppressWarnings("unused")
     public static final RegistryObject<PlacedFeature> TROPICAL_CAVE_FLOOR_VEGETATION = PLACED_FEATURES.register("tropical_cave_floor_vegetation",
             () -> new PlacedFeature(ModConfiguredFeatures.TROPICAL_MOSS_PATCH.getHolder().orElseThrow(),
                             //veins per chunk

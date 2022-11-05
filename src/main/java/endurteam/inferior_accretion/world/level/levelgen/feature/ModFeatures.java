@@ -14,13 +14,10 @@ public class ModFeatures
 	public static final DeferredRegister<Feature<?>> FEATURES =
 			DeferredRegister.create(Registry.FEATURE_REGISTRY, InferiorAccretion.MOD_ID);
 
-
-
-	@SuppressWarnings("unused")
+			
 	public static final RegistryObject<Feature<CaveCoverConfiguration>> CAVE_COVER = FEATURES.register("cave_cover", () ->
 			new CaveCoverFeature(CaveCoverConfiguration.CODEC));
 
-	@SuppressWarnings("unused")
 	public static final RegistryObject<Feature<SimpleBlockWithBambooConfiguration>> SIMPLE_BLOCK_WITH_BAMBOO
 			= FEATURES.register("simple_block_with_bamboo", () ->
 			new SimpleBlockWithBambooFeature(SimpleBlockWithBambooConfiguration.CODEC));

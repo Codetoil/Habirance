@@ -20,11 +20,21 @@
     },
     "customizations": {
         "vscode": {"extensions": [
-                "vscjava.vscode-gradle",
-                "vscjava.vscode-java-pack",
-                "DavidAnson.vscode-markdownlint",
-                "eamodio.gitlens"
-            ]}
+				"vscjava.vscode-gradle",
+				"vscjava.vscode-java-pack",
+				"DavidAnson.vscode-markdownlint",
+				"eamodio.gitlens",
+				"bungcip.better-toml",
+				"SPGoding.datapack-language-server",
+				"vscjava.vscode-java-debug",
+				"dbaeumer.vscode-eslint",
+				"VisualStudioExptTeam.vscodeintellicode",
+				"VisualStudioExptTeam.intellicode-api-usage-examples",
+				"redhat.java",
+				"vscjava.vscode-maven",
+				"vscjava.vscode-java-dependency",
+				"vscjava.vscode-java-test"
+			]}
     },
     "postStartCommand": "sudo ./mesa_install.sh"
 }

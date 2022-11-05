@@ -17,16 +17,14 @@ import net.minecraft.world.entity.ai.behavior.*;
 import net.minecraft.world.entity.ai.memory.MemoryModuleType;
 import net.minecraft.world.entity.ai.memory.NearestVisibleLivingEntities;
 import net.minecraft.world.entity.ai.sensing.Sensor;
-import net.minecraft.world.entity.monster.Enemy;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.monster.Zoglin;
-import net.minecraft.world.entity.monster.hoglin.HoglinBase;
 import net.minecraft.world.entity.schedule.Activity;
 import net.minecraft.world.level.Level;
 
 import java.util.Optional;
 
-public class UndeadHog extends Zoglin implements Enemy, HoglinBase{
+public class UndeadHog extends Zoglin{
 
     public UndeadHog(EntityType<? extends Zoglin> p_34204_, Level p_34205_) {
         super(p_34204_, p_34205_);

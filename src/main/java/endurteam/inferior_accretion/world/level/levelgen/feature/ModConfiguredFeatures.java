@@ -8,7 +8,6 @@ import endurteam.inferior_accretion.world.level.levelgen.feature.configurations.
 import net.minecraft.core.Registry;
 import net.minecraft.data.worldgen.features.OreFeatures;
 import net.minecraft.data.worldgen.placement.PlacementUtils;
-import net.minecraft.tags.BlockTags;
 import net.minecraft.util.random.SimpleWeightedRandomList;
 import net.minecraft.util.valueproviders.ClampedNormalInt;
 import net.minecraft.util.valueproviders.ConstantInt;
@@ -34,31 +33,26 @@ public class ModConfiguredFeatures {
     public static final DeferredRegister<ConfiguredFeature<?,?>> CONFIGURED_FEATURES =
             DeferredRegister.create(Registry.CONFIGURED_FEATURE_REGISTRY, InferiorAccretion.MOD_ID);
 
-
-
+            
     //TODO: should spawn next to deepslate diamond instead, improvement needed
-    @SuppressWarnings("unused")
     public static final RegistryObject<ConfiguredFeature<?,?>> ALABASTER = CONFIGURED_FEATURES.register("alabaster",
             () -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(
                     List.of(
                             OreConfiguration.target(OreFeatures.DEEPSLATE_ORE_REPLACEABLES, ModBlocks.ALABASTER.get().defaultBlockState())
                     ),16)));
 
-    @SuppressWarnings("unused")
     public static final RegistryObject<ConfiguredFeature<?,?>> SERENE = CONFIGURED_FEATURES.register("serene",
             () -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(
                     List.of(
                             OreConfiguration.target(new BlockMatchTest(Blocks.SANDSTONE), ModBlocks.SERENE.get().defaultBlockState())
                     ),16)));
 
-    @SuppressWarnings("unused")
     public static final RegistryObject<ConfiguredFeature<?,?>> DRYSTONE = CONFIGURED_FEATURES.register("drystone",
             () -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(
                     List.of(
                             OreConfiguration.target(new BlockMatchTest(Blocks.RED_TERRACOTTA), ModBlocks.DRYSTONE.get().defaultBlockState())
                     ),34)));
 
-    @SuppressWarnings("unused")
     public static final RegistryObject<ConfiguredFeature<?,?>> LIMESTONE_CAVE_COVER = CONFIGURED_FEATURES.register("limestone",
             () -> new ConfiguredFeature<>(ModFeatures.CAVE_COVER.get(), new CaveCoverConfiguration(
                     ModBlocks.LIMESTONE.get().defaultBlockState(), ClampedNormalInt.of(12.0f, 3.0f, 8, 16))));
@@ -80,7 +74,6 @@ public class ModConfiguredFeatures {
                             .add(Blocks.BAMBOO.defaultBlockState(), 5)
             ))));
 
-    @SuppressWarnings("unused")
     public static final RegistryObject<ConfiguredFeature<?,?>> TROPICAL_MOSS_PATCH = CONFIGURED_FEATURES.register("tropical_moss_patch",
             () -> new ConfiguredFeature<>(Feature.VEGETATION_PATCH, new VegetationPatchConfiguration(
                     ModTags.TROPICAL_MOSS_REPLACEABLE,

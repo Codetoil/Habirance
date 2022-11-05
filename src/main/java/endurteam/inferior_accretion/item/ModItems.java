@@ -14,34 +14,27 @@ import net.minecraftforge.registries.RegistryObject;
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, InferiorAccretion.MOD_ID);
 
-    @SuppressWarnings("unused")
     public static final RegistryObject<Item> UNDEAD_HOG_SPAWN_EGG = ITEMS.register("undead_hog_spawn_egg",
             () -> new ForgeSpawnEggItem(ModEntityTypes.UNDEAD_HOG,
                     0x888958,
                     0x524e30,
                     new Item.Properties().tab(ModCreativeModeTab.INFERIOR_ACCRETION_TAB)));
 
-    @SuppressWarnings("unused")
     public static final RegistryObject<Item> ROTTEN_HIDE = ITEMS.register("rotten_hide",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.INFERIOR_ACCRETION_TAB).food(ModFoodItems.ROTTEN_HIDE)));
 
-    @SuppressWarnings("unused")
     public static final RegistryObject<Item> STALE_CAP = ITEMS.register("stale_cap",
             () -> new ArmorItem(ModArmorMaterials.STALE, EquipmentSlot.HEAD,new Item.Properties().tab(ModCreativeModeTab.INFERIOR_ACCRETION_TAB)));
 
-    @SuppressWarnings("unused")
     public static final RegistryObject<Item> STALE_TUNIC = ITEMS.register("stale_tunic",
             () -> new ArmorItem(ModArmorMaterials.STALE, EquipmentSlot.CHEST,new Item.Properties().tab(ModCreativeModeTab.INFERIOR_ACCRETION_TAB)));
 
-    @SuppressWarnings("unused")
     public static final RegistryObject<Item> STALE_PANTS = ITEMS.register("stale_pants",
             () -> new ArmorItem(ModArmorMaterials.STALE, EquipmentSlot.LEGS,new Item.Properties().tab(ModCreativeModeTab.INFERIOR_ACCRETION_TAB)));
 
-    @SuppressWarnings("unused")
     public static final RegistryObject<Item> STALE_BOOTS = ITEMS.register("stale_boots",
             () -> new ArmorItem(ModArmorMaterials.STALE, EquipmentSlot.FEET,new Item.Properties().tab(ModCreativeModeTab.INFERIOR_ACCRETION_TAB)));
 
-    @SuppressWarnings("unused")
     public static final RegistryObject<Item> LYCE = ITEMS.register("lyce",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.INFERIOR_ACCRETION_TAB)));
 
