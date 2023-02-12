@@ -1,6 +1,0 @@
-{
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "inferior_accretion:item/rotten_hide"
-  }
-}

@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/cube_bottom_top",
-  "textures": {
-    "top": "inferior_accretion:block/serene_top",
-    "bottom": "inferior_accretion:block/serene_bottom",
-    "side": "inferior_accretion:block/serene"
-  }
-}

@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "habirance:drystone"
+  },
+  "result": "habirance:drystone_wall",
+  "count": 1
+}

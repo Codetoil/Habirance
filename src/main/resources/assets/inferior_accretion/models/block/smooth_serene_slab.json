@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab",
-  "textures": {
-    "bottom": "inferior_accretion:block/serene_bottom",
-    "top": "inferior_accretion:block/serene_bottom",
-    "side": "inferior_accretion:block/serene_bottom"
-  }
-}

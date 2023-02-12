@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "habirance:block/polished_russet",
+    "top": "habirance:block/polished_russet",
+    "side": "habirance:block/polished_russet"
+  }
+}

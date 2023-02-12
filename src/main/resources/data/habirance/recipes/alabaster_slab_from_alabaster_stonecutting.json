@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "habirance:alabaster"
+  },
+  "result": "habirance:alabaster_slab",
+  "count": 2
+}

@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab",
-  "textures": {
-    "bottom": "inferior_accretion:block/limestone",
-    "top": "inferior_accretion:block/limestone",
-    "side": "inferior_accretion:block/limestone"
-  }
-}

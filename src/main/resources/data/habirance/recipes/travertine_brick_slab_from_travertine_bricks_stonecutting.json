@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "habirance:travertine_bricks"
+  },
+  "result": "habirance:travertine_brick_slab",
+  "count": 2
+}

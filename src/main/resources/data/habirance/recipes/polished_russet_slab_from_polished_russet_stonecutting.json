@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "habirance:polished_russet"
+  },
+  "result": "habirance:polished_russet_slab",
+  "count": 2
+}

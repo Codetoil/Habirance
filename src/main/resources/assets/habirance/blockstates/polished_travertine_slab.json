@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "habirance:block/polished_travertine_slab"
+    },
+    "type=double": {
+      "model": "habirance:block/polished_travertine"
+    },
+    "type=top": {
+      "model": "habirance:block/polished_travertine_slab_top"
+    }
+  }
+}

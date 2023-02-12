@@ -1,7 +1,7 @@
 {
   "replace": false,
   "values": [
-    "inferior_accretion:lyce_ore",
-    "inferior_accretion:block_of_lyce"
+    "habirance:lyce_ore",
+    "habirance:block_of_lyce"
   ]
 }

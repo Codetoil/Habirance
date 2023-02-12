@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "habirance:travertine"
+  },
+  "result": "habirance:polished_travertine_stairs",
+  "count": 1
+}

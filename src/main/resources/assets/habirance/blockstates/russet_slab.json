@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "habirance:block/russet_slab"
+    },
+    "type=double": {
+      "model": "habirance:block/russet"
+    },
+    "type=top": {
+      "model": "habirance:block/russet_slab_top"
+    }
+  }
+}

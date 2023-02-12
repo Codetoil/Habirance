@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "habirance:polished_drystone"
+  },
+  "result": "habirance:polished_drystone_slab",
+  "count": 2
+}

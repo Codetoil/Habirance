@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "habirance:smooth_serene"
+  },
+  "result": "habirance:smooth_serene_stairs",
+  "count": 1
+}

@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/inner_stairs",
-  "textures": {
-    "bottom": "inferior_accretion:block/travertine",
-    "top": "inferior_accretion:block/travertine",
-    "side": "inferior_accretion:block/travertine"
-  }
-}

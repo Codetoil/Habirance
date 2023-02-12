@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SS",
+    "SS"
+  ],
+  "key": {
+    "S": {
+      "item": "habirance:travertine"
+    }
+  },
+  "result": {
+    "item": "habirance:travertine_bricks",
+    "count": 4
+  }
+}
