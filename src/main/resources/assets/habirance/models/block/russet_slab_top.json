@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab_top",
-  "textures": {
-    "bottom": "habirance:block/russet",
-    "top": "habirance:block/russet",
-    "side": "habirance:block/russet"
-  }
-}

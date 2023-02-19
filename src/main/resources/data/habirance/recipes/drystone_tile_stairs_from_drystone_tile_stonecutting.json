@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "habirance:drystone_tiles"
-  },
-  "result": "habirance:drystone_tile_stairs",
-  "count": 1
-}

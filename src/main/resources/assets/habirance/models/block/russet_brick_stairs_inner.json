@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/inner_stairs",
-  "textures": {
-    "bottom": "habirance:block/russet_bricks",
-    "top": "habirance:block/russet_bricks",
-    "side": "habirance:block/russet_bricks"
-  }
-}

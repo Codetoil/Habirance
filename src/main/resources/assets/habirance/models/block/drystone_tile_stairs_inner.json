@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/inner_stairs",
-  "textures": {
-    "bottom": "habirance:block/drystone_tiles",
-    "top": "habirance:block/drystone_tiles",
-    "side": "habirance:block/drystone_tiles"
-  }
-}

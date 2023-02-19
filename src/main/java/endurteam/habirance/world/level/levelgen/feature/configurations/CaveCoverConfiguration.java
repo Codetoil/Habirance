@@ -11,7 +11,7 @@ public record CaveCoverConfiguration(BlockState state, IntProvider sphereRadius)
 	public static final Codec<CaveCoverConfiguration> CODEC = RecordCodecBuilder.create((instance) ->
 			instance.group(BlockState.CODEC.fieldOf("state")
 									.forGetter((configuration) -> configuration.state),
-							IntProvider.codec(8, 16).fieldOf("sphereRadius")
+							IntProvider.codec(8, 16).fieldOf("sphere_radius")
 									.forGetter((configuration) -> configuration.sphereRadius))
 					.apply(instance, CaveCoverConfiguration::new));
 
