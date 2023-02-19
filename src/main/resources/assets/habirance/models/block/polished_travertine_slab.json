@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab",
-  "textures": {
-    "bottom": "habirance:block/polished_travertine",
-    "top": "habirance:block/polished_travertine",
-    "side": "habirance:block/polished_travertine"
-  }
-}

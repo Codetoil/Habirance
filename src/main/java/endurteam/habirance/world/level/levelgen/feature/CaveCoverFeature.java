@@ -8,6 +8,7 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.FeaturePlaceContext;
 
+// TODO Replace with something that isn't just a bunch of RNG.
 public class CaveCoverFeature extends Feature<CaveCoverConfiguration>
 {
 	public CaveCoverFeature(Codec<CaveCoverConfiguration> pCodec)

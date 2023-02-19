@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "habirance:travertine"
-  },
-  "result": "habirance:polished_travertine",
-  "count": 1
-}

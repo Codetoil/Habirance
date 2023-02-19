@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/cube_bottom_top",
-  "textures": {
-    "top": "habirance:block/serene_top",
-    "bottom": "habirance:block/serene_bottom",
-    "side": "habirance:block/serene"
-  }
-}

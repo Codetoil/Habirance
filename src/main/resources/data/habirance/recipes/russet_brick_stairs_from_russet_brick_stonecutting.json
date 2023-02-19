@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "habirance:russet_bricks"
-  },
-  "result": "habirance:russet_brick_stairs",
-  "count": 1
-}

@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "habirance:drystone"
-  },
-  "result": "habirance:chiseled_drystone_bricks",
-  "count": 1
-}
