@@ -1,0 +1,16 @@
+{
+	"variants": {
+		"pebbles=1": {
+			"model": "habirance:block/pebble_stage1"
+		},
+		"pebbles=2": {
+			"model": "habirance:block/pebble_stage2"
+		},
+		"pebbles=3": {
+			"model": "habirance:block/pebble_stage3"
+		},
+		"pebbles=4": {
+			"model": "habirance:block/pebble_stage4"
+		}
+	}
+}

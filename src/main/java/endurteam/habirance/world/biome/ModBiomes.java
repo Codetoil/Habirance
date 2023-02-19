@@ -8,12 +8,13 @@ import net.minecraft.world.level.biome.MobSpawnSettings;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
+import org.jetbrains.annotations.NotNull;
 
 public class ModBiomes
 {
 	public static final DeferredRegister<Biome> BIOMES = DeferredRegister.create(ForgeRegistries.BIOMES, Habirance.MOD_ID);
 
-	private static MobSpawnSettings.Builder createBuilderWithDefaultSpawns()
+	private static @NotNull MobSpawnSettings.Builder createBuilderWithDefaultSpawns()
 	{
 		MobSpawnSettings.Builder builder = new MobSpawnSettings.Builder();
 		BiomeDefaultFeatures.commonSpawns(builder);

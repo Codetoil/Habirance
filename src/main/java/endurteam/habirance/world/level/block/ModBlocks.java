@@ -108,6 +108,16 @@ public class ModBlocks
 							.requiresCorrectToolForDrops())
 	);
 
+	public static final RegistryObject<Block> PEBBLE = registerBlock(
+			"pebble",
+			() -> new PebbleBlock(
+					BlockBehaviour.Properties.of(Material.STONE)
+							.strength(0.1f)
+							.explosionResistance(6.0f)
+							.sound(SoundType.STONE)
+			)
+	);
+
 	@SuppressWarnings("SameParameterValue")
 	private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block)
 	{

@@ -1,0 +1,34 @@
+{
+	"credit": "Made with Blockbench",
+	"texture_size": [32, 32],
+	"textures": {
+		"1": "habirance:block/pebble_stage2",
+		"particle": "habirance:block/pebble_stage2"
+	},
+	"elements": [
+		{
+			"from": [4, 0, 4],
+			"to": [12, 6, 12],
+			"faces": {
+				"north": {"uv": [4, 0, 8, 3], "texture": "#1"},
+				"east": {"uv": [4, 3, 8, 6], "texture": "#1"},
+				"south": {"uv": [4, 6, 8, 9], "texture": "#1"},
+				"west": {"uv": [0, 8, 4, 11], "texture": "#1"},
+				"up": {"uv": [4, 4, 0, 0], "texture": "#1"},
+				"down": {"uv": [4, 4, 0, 8], "texture": "#1"}
+			}
+		},
+		{
+			"from": [2, 0, 2],
+			"to": [6, 2, 6],
+			"faces": {
+				"north": {"uv": [8, 4, 10, 5], "texture": "#1"},
+				"east": {"uv": [8, 5, 10, 6], "texture": "#1"},
+				"south": {"uv": [8, 6, 10, 7], "texture": "#1"},
+				"west": {"uv": [8, 7, 10, 8], "texture": "#1"},
+				"up": {"uv": [10, 2, 8, 0], "texture": "#1"},
+				"down": {"uv": [10, 2, 8, 4], "texture": "#1"}
+			}
+		}
+	]
+}

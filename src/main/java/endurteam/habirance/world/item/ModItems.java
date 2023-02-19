@@ -1,6 +1,8 @@
 package endurteam.habirance.world.item;
 
 import endurteam.habirance.Habirance;
+import endurteam.habirance.world.level.block.ModBlocks;
+import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -13,7 +15,6 @@ public class ModItems
 
 	public static final RegistryObject<Item> LYCE = ITEMS.register("lyce",
 			() -> new Item(new Item.Properties()));
-
 
 	public static void register(IEventBus eventBus)
 	{

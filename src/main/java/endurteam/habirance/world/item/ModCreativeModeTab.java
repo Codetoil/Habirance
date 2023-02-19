@@ -8,12 +8,13 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.event.CreativeModeTabEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
+import org.jetbrains.annotations.NotNull;
 
 @Mod.EventBusSubscriber(modid = Habirance.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class ModCreativeModeTab
 {
     @SubscribeEvent
-    public static void buildContents(CreativeModeTabEvent.Register event)
+    public static void buildContents(CreativeModeTabEvent.@NotNull Register event)
     {
 		event.registerCreativeModeTab(new ResourceLocation(Habirance.MOD_ID, "tab"), builder ->
 				builder.title(Component.translatable("item_group." + Habirance.MOD_ID + ".tab"))
@@ -29,6 +30,7 @@ public class ModCreativeModeTab
 						pOutput.accept(ModBlocks.LYCE_ORE.get());
 						pOutput.accept(ModBlocks.BLOCK_OF_LYCE.get());
 						pOutput.accept(ModItems.LYCE.get());
+						pOutput.accept(ModBlocks.PEBBLE.get());
 					}));
     }
 }
