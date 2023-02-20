@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SS",
+    "SS"
+  ],
+  "key": {
+    "S": {
+      "item": "habirance:limestone"
+    }
+  },
+  "result": {
+    "item": "habirance:polished_limestone",
+    "count": 4
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "block.habirance.limestone": "Limestone",
+  "block.habirance.polished_limestone": "Polished Limestone",
+  "block.habirance.limestone_stairs": "Limestone Stairs",
+  "block.habirance.limestone_slab": "Limestone Slab",
+  "block.habirance.limestone_wall": "Limestone Wall",
+  "block.habirance.polished_limestone_stairs": "Polished Limestone Stairs",
+  "block.habirance.polished_limestone_slab": "Polished Limestone Slab",
+
+  "block.habirance.lyce_ore": "Lyce Ore",
+  "block.habirance.block_of_lyce": "Block of Lyce",
+
+  "block.habirance.pebble": "Pebble",
+
+  "item.habirance.lyce": "Lyce",
+
+  "item_group.habirance.tab": "Habirance"
+}

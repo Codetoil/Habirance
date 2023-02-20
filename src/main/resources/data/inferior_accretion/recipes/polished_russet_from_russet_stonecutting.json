@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "inferior_accretion:russet"
-  },
-  "result": "inferior_accretion:polished_russet",
-  "count": 1
-}

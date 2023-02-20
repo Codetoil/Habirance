@@ -1,0 +1,40 @@
+{
+    "image": "mcr.microsoft.com/devcontainers/java:17",
+    // "runArgs": ["--gpus", "all"],
+    "features": {
+        "ghcr.io/devcontainers/features/java:1": {
+        "version": "none",
+        "installGradle": true
+        },
+        "ghcr.io/devcontainers/features/desktop-lite:1": {
+            "version": "latest",
+            "password": "password"
+        }
+    },
+    "settings": {
+        "java.import.gradle.java.home": "/usr/lib/jvm/msopenjdk-current"
+    },
+    "forwardPorts": [6080],
+    "containerEnv": {
+        "JAVA_HOME": "/usr/lib/jvm/msopenjdk-current"
+    },
+    "customizations": {
+        "vscode": {"extensions": [
+				"vscjava.vscode-gradle",
+				"vscjava.vscode-java-pack",
+				"DavidAnson.vscode-markdownlint",
+				"eamodio.gitlens",
+				"bungcip.better-toml",
+				"SPGoding.datapack-language-server",
+				"vscjava.vscode-java-debug",
+				"dbaeumer.vscode-eslint",
+				"VisualStudioExptTeam.vscodeintellicode",
+				"VisualStudioExptTeam.intellicode-api-usage-examples",
+				"redhat.java",
+				"vscjava.vscode-maven",
+				"vscjava.vscode-java-dependency",
+				"vscjava.vscode-java-test"
+			]}
+    },
+    "postStartCommand": "sudo ./mesa_install.sh"
+}

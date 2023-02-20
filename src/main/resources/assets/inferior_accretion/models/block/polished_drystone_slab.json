@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab",
-  "textures": {
-    "bottom": "inferior_accretion:block/polished_drystone",
-    "top": "inferior_accretion:block/polished_drystone",
-    "side": "inferior_accretion:block/polished_drystone"
-  }
-}

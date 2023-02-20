@@ -1,0 +1,62 @@
+{
+	"type": "minecraft:block",
+	"pools": [
+		{
+			"bonus_rolls": 0.0,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"functions": [
+						{
+							"add": false,
+							"conditions": [
+								{
+									"block": "habirance:pebble",
+									"condition": "minecraft:block_state_property",
+									"properties": {
+										"pebbles": "2"
+									}
+								}
+							],
+							"count": 2.0,
+							"function": "minecraft:set_count"
+						},
+						{
+							"add": false,
+							"conditions": [
+								{
+									"block": "habirance:pebble",
+									"condition": "minecraft:block_state_property",
+									"properties": {
+										"pebbles": "3"
+									}
+								}
+							],
+							"count": 3.0,
+							"function": "minecraft:set_count"
+						},
+						{
+							"add": false,
+							"conditions": [
+								{
+									"block": "habirance:pebble",
+									"condition": "minecraft:block_state_property",
+									"properties": {
+										"pebbles": "4"
+									}
+								}
+							],
+							"count": 4.0,
+							"function": "minecraft:set_count"
+						},
+						{
+							"function": "minecraft:explosion_decay"
+						}
+					],
+					"name": "habirance:pebble"
+				}
+			],
+			"rolls": 1.0
+		}
+	]
+}

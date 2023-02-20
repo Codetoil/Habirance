@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "LLL",
+    "LLL",
+    "LLL"
+  ],
+  "key": {
+    "L": {
+      "item": "habirance:lyce"
+    }
+  },
+  "result": {
+    "item": "habirance:block_of_lyce",
+    "count": 1
+  }
+}

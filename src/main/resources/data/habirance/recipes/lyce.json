@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "habirance:block_of_lyce"
+    }
+  ],
+  "result": {
+    "item": "habirance:lyce",
+    "count": 9
+  }
+}

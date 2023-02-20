@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "habirance:block/limestone_slab"
+    },
+    "type=double": {
+      "model": "habirance:block/limestone"
+    },
+    "type=top": {
+      "model": "habirance:block/limestone_slab_top"
+    }
+  }
+}
