@@ -6,6 +6,7 @@ import endurteam.habirance.world.item.ModItems;
 import endurteam.habirance.world.biome.ModBiomes;
 import endurteam.habirance.world.level.block.ModBlocks;
 import endurteam.habirance.world.level.levelgen.feature.ModFeatures;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.levelgen.SurfaceRules;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -13,6 +14,8 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
+import terrablender.api.RegionType;
+import terrablender.api.Regions;
 import terrablender.api.SurfaceRuleManager;
 
 // The value here should match an entry in the META-INF/mods.toml file
@@ -36,7 +39,6 @@ public class Habirance
 		ModItems.register(eventBus);
 		ModEntityTypes.register(eventBus);
 		ModFeatures.register(eventBus);
-		ModBiomes.register(eventBus);
 
 		// Register ourselves for server and other game events we are interested in
 		MinecraftForge.EVENT_BUS.register(this);

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "habirance:block/cut_serene_slab"
+    },
+    "type=double": {
+      "model": "habirance:block/cut_serene"
+    },
+    "type=top": {
+      "model": "habirance:block/cut_serene_slab_top"
+    }
+  }
+}

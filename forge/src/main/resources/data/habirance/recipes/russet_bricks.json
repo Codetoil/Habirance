@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SS",
+    "SS"
+  ],
+  "key": {
+    "S": {
+      "item": "habirance:russet"
+    }
+  },
+  "result": {
+    "item": "habirance:russet_bricks",
+    "count": 4
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "habirance:serene"
+  },
+  "result": "habirance:cut_serene",
+  "count": 1
+}

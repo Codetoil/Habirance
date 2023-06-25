@@ -8,4 +8,6 @@ import net.minecraft.world.level.block.Block;
 
 public class ModTags
 {
+    public static TagKey<Block> TROPICAL_MOSS_REPLACEABLE =
+            BlockTags.create(new ResourceLocation(Habirance.MOD_ID, "tropical_moss_replaceable"));
 }

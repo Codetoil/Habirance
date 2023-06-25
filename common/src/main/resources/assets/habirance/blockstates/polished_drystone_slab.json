@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "habirance:block/polished_drystone_slab"
+    },
+    "type=double": {
+      "model": "habirance:block/polished_drystone"
+    },
+    "type=top": {
+      "model": "habirance:block/polished_drystone_slab_top"
+    }
+  }
+}

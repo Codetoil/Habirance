@@ -30,7 +30,8 @@ public class PebbleBlock extends Block
 
 	@SuppressWarnings("deprecation")
 	public boolean canBeReplaced(@NotNull BlockState pState, @NotNull BlockPlaceContext pUseContext) {
-		return !pUseContext.isSecondaryUseActive() && pUseContext.getItemInHand().getItem() == this.asItem() && pState.getValue(PEBBLES) < 4 || super.canBeReplaced(pState, pUseContext);
+		return !pUseContext.isSecondaryUseActive() && pUseContext.getItemInHand().getItem() == this.asItem()
+				&& pState.getValue(PEBBLES) < 4 || super.canBeReplaced(pState, pUseContext);
 	}
 
 	public BlockState getStateForPlacement(@NotNull BlockPlaceContext pContext) {
@@ -43,7 +44,8 @@ public class PebbleBlock extends Block
 	}
 
 	@SuppressWarnings("deprecation")
-	public @NotNull VoxelShape getShape(@NotNull BlockState pState, @NotNull BlockGetter pLevel, @NotNull BlockPos pPos, @NotNull CollisionContext pContext) {
+	public @NotNull VoxelShape getShape(@NotNull BlockState pState, @NotNull BlockGetter pLevel,
+										@NotNull BlockPos pPos, @NotNull CollisionContext pContext) {
 		return switch (pState.getValue(PEBBLES))
 				{
 					case 2 -> TWO_AABB;

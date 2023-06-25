@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "habirance:russet_bricks"
+  },
+  "result": "habirance:cracked_russet_bricks",
+  "experience": 0.1,
+  "cookingtime": 200
+}

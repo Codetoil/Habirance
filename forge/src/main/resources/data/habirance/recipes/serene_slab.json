@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "habirance:serene"
+    }
+  },
+  "result": {
+    "item": "habirance:serene_slab",
+    "count": 6
+  }
+}

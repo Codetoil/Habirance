@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "habirance:block/chiseled_drystone_bricks"
+  }
+}
