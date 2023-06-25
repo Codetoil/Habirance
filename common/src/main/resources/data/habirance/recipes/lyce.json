@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "habirance:block_of_lyce"
+      "item": "habirance:lyce_block"
     }
   ],
   "result": {

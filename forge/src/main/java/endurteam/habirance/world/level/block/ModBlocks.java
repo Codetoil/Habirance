@@ -6,7 +6,7 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.material.Material;
+import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -22,71 +22,46 @@ public class ModBlocks
 	public static final RegistryObject<Block> LIMESTONE = registerBlock(
 			"limestone",
 			() -> new Block(
-					BlockBehaviour.Properties.of(Material.STONE)
-							.strength(0.75f)
-							.explosionResistance(0.75f)
+					BlockBehaviour.Properties.of()
 							.sound(SoundType.CALCITE)
+							.instrument(NoteBlockInstrument.BASEDRUM)
+							.strength(0.75f, 0.75f)
 							.requiresCorrectToolForDrops())
 	);
 
 	public static final RegistryObject<Block> LIMESTONE_STAIRS = registerBlock(
 			"limestone_stairs",
 			() -> new StairBlock(() -> ModBlocks.LIMESTONE.get().defaultBlockState(),
-					BlockBehaviour.Properties.of(Material.STONE)
-							.strength(0.75f)
-							.explosionResistance(0.75f)
-							.sound(SoundType.CALCITE)
-							.requiresCorrectToolForDrops())
+					BlockBehaviour.Properties.copy(LIMESTONE.get()))
 	);
 
 	public static final RegistryObject<Block> LIMESTONE_SLAB = registerBlock(
 			"limestone_slab",
 			() -> new SlabBlock(
-					BlockBehaviour.Properties.of(Material.STONE)
-							.strength(0.75f)
-							.explosionResistance(0.75f)
-							.sound(SoundType.CALCITE)
-							.requiresCorrectToolForDrops())
+					BlockBehaviour.Properties.copy(LIMESTONE.get()))
 	);
 
 	public static final RegistryObject<Block> LIMESTONE_WALL = registerBlock(
 			"limestone_wall",
 			() -> new WallBlock(
-					BlockBehaviour.Properties.of(Material.STONE)
-							.strength(0.75f)
-							.explosionResistance(0.75f)
-							.sound(SoundType.CALCITE)
-							.requiresCorrectToolForDrops())
+					BlockBehaviour.Properties.copy(LIMESTONE.get()))
 	);
 
 	public static final RegistryObject<Block> POLISHED_LIMESTONE = registerBlock(
 			"polished_limestone",
-			() -> new Block(
-					BlockBehaviour.Properties.of(Material.STONE)
-							.strength(0.75f)
-							.explosionResistance(0.75f)
-							.sound(SoundType.CALCITE)
-							.requiresCorrectToolForDrops())
+			() -> new Block(BlockBehaviour.Properties.copy(LIMESTONE.get()))
 	);
 
 	public static final RegistryObject<Block> POLISHED_LIMESTONE_STAIRS = registerBlock(
 			"polished_limestone_stairs",
 			() -> new StairBlock(() -> ModBlocks.POLISHED_LIMESTONE.get().defaultBlockState(),
-					BlockBehaviour.Properties.of(Material.STONE)
-							.strength(0.75f)
-							.explosionResistance(0.75f)
-							.sound(SoundType.CALCITE)
-							.requiresCorrectToolForDrops())
+					BlockBehaviour.Properties.copy(POLISHED_LIMESTONE.get()))
 	);
 
 	public static final RegistryObject<Block> POLISHED_LIMESTONE_SLAB = registerBlock(
 			"polished_limestone_slab",
 			() -> new SlabBlock(
-					BlockBehaviour.Properties.of(Material.STONE)
-							.strength(0.75f)
-							.explosionResistance(0.75f)
-							.sound(SoundType.CALCITE)
-							.requiresCorrectToolForDrops())
+					BlockBehaviour.Properties.copy(POLISHED_LIMESTONE.get()))
 	);
 
 	public static final RegistryObject<Block> ALABASTER = registerBlock(
@@ -662,30 +637,22 @@ public class ModBlocks
 	public static final RegistryObject<Block> LYCE_ORE = registerBlock(
 			"lyce_ore",
 			() -> new Block(
-					BlockBehaviour.Properties.of(Material.STONE)
-							.strength(0.75f)
-							.explosionResistance(0.75f)
-							.sound(SoundType.CALCITE)
-							.requiresCorrectToolForDrops())
+					BlockBehaviour.Properties.copy(LIMESTONE.get()))
 	);
 
-	public static final RegistryObject<Block> BLOCK_OF_LYCE = registerBlock(
-			"block_of_lyce",
+	public static final RegistryObject<Block> LYCE_BLOCK = registerBlock(
+			"lyce_block",
 			() -> new Block(
-					BlockBehaviour.Properties.of(Material.STONE)
-							.strength(1.5f)
-							.explosionResistance(6f)
-							.sound(SoundType.STONE)
+					BlockBehaviour.Properties.of()
+							.strength(1.5f, 6.0f)
 							.requiresCorrectToolForDrops())
 	);
 
 	public static final RegistryObject<Block> PEBBLE = registerBlock(
 			"pebble",
 			() -> new PebbleBlock(
-					BlockBehaviour.Properties.of(Material.STONE)
-							.strength(0.1f)
-							.explosionResistance(6.0f)
-							.sound(SoundType.STONE)
+					BlockBehaviour.Properties.of()
+							.strength(0.1f, 6.0f)
 			)
 	);
 

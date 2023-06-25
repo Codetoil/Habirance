@@ -1,7 +1,7 @@
 package endurteam.habirance;
 
 import com.mojang.logging.LogUtils;
-import endurteam.habirance.world.entity.ModEntityTypes;
+import endurteam.habirance.world.biome.TropicalCaveRegion;
 import endurteam.habirance.world.item.ModItems;
 import endurteam.habirance.world.biome.ModBiomes;
 import endurteam.habirance.world.level.block.ModBlocks;
@@ -37,7 +37,6 @@ public class Habirance
 
 		ModBlocks.register(eventBus);
 		ModItems.register(eventBus);
-		ModEntityTypes.register(eventBus);
 		ModFeatures.register(eventBus);
 
 		// Register ourselves for server and other game events we are interested in
@@ -47,7 +46,10 @@ public class Habirance
 	private void setup(final FMLCommonSetupEvent event)
 	{
 		event.enqueueWork(() -> {
-			SurfaceRuleManager.addSurfaceRules(SurfaceRuleManager.RuleCategory.OVERWORLD, MOD_ID, SurfaceRules.sequence());
+			Regions.register(new TropicalCaveRegion(new ResourceLocation(MOD_ID, "tropical_cave_region"),
+					RegionType.OVERWORLD, 2));
+			SurfaceRuleManager.addSurfaceRules(SurfaceRuleManager.RuleCategory.OVERWORLD, MOD_ID,
+					SurfaceRules.state(ModBlocks.LIMESTONE.get().defaultBlockState()));
 		});
 	}
 }

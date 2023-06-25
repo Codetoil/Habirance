@@ -2,6 +2,7 @@
 	"type": "minecraft:block",
 	"pools": [
 		{
+			"name": "pebble pool",
 			"bonus_rolls": 0.0,
 			"entries": [
 				{
@@ -58,5 +59,6 @@
 			],
 			"rolls": 1.0
 		}
-	]
+	],
+	"random_sequence": "habirance:blocks/pebble"
 }

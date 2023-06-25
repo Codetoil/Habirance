@@ -2,25 +2,25 @@
   "type": "minecraft:block",
   "pools": [
     {
-      "rolls": 1.0,
+      "name": "limestone slab pool",
       "bonus_rolls": 0.0,
       "entries": [
         {
           "type": "minecraft:item",
           "functions": [
             {
-              "function": "minecraft:set_count",
+              "add": false,
               "conditions": [
                 {
-                  "condition": "minecraft:block_state_property",
                   "block": "habirance:limestone_slab",
+                  "condition": "minecraft:block_state_property",
                   "properties": {
                     "type": "double"
                   }
                 }
               ],
               "count": 2.0,
-              "add": false
+              "function": "minecraft:set_count"
             },
             {
               "function": "minecraft:explosion_decay"
@@ -28,7 +28,9 @@
           ],
           "name": "habirance:limestone_slab"
         }
-      ]
+      ],
+      "rolls": 1.0
     }
-  ]
+  ],
+  "random_sequence": "habirance:blocks/limestone_slab"
 }
