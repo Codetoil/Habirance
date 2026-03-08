@@ -27,11 +27,13 @@ minecraft {
 		configureEach {
 			workingDir.convention(layout.projectDirectory.dir("run"))
 
-			//systemProperty ("forge.logging.markers", "REGISTRIES")
+			systemProperty ("forge.logging.markers", "REGISTRIES,CORE,CONFIG,SCAN,LOADING,NETWORK,DEBUG")
 
-			systemProperty("forge.logging.console.level", "debug")
+			systemProperty("forge.logging.console.level", "all")
 
 			systemProperty("eventbus.api.strictRuntimeChecks", "true")
+
+			systemProperty("mixin.env.remapRefMap", "true")
 
 			//args ("-mixin.config=${commonMod.id}.mixins.json")
 
