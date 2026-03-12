@@ -35,10 +35,8 @@ dependencies {
 
 	modImplementation("com.github.glitchfiend:TerraBlender-fabric:${commonMod.minecraft_version}-${commonMod.prop("terrablender_version")}")
 
-	if (stonecutter.eval(stonecutter.current.version, ">=1.20.6")) {
-		modImplementation("software.bernie.geckolib:geckolib-fabric-${commonMod.minecraft_version}:${commonMod.prop("geckolib_version")}")
-	} else {
-		modImplementation("software.bernie.geckolib:geckolib-fabric-${commonMod.minecraft_version}:${commonMod.prop("geckolib_version")}")
+	modImplementation("software.bernie.geckolib:geckolib-fabric-${commonMod.minecraft_version}:${commonMod.prop("geckolib_version")}")
+	if (stonecutter.eval(stonecutter.current.version, "<1.20.6")) {
 		implementation("com.eliotlash.mclib:mclib:20")
 	}
 

@@ -1,16 +1,16 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name=":minecraftforge:1.20.1:runClient" type="GradleRunConfiguration" factoryName="Gradle">
+  <configuration default="false" name=":minecraftforge:1.21.11:runServer" type="GradleRunConfiguration" factoryName="Gradle">
     <ExternalSystemSettings>
       <option name="executionName" />
       <option name="externalProjectPath" value="$PROJECT_DIR$" />
       <option name="externalSystemIdString" value="GRADLE" />
-      <option name="scriptParameters" value="--stacktrace" />
+      <option name="scriptParameters" value="" />
       <option name="taskDescriptions">
         <list />
       </option>
       <option name="taskNames">
         <list>
-          <option value=":minecraftforge:1.20.1:runClient" />
+          <option value=":minecraftforge:1.21.11:runServer" />
         </list>
       </option>
       <option name="vmOptions" />

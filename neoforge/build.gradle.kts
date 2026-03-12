@@ -32,8 +32,18 @@ dependencies {
 		exclude("modmenu")
 	}
 
-	jarJar("net.fabricmc:sponge-mixin:${commonMod.prop("fabric_mixin_version")}")
-	jarJar("io.github.llamalad7:mixinextras-neoforge:${commonMod.prop("mixinextras_version")}")
+	jarJar("net.fabricmc:sponge-mixin:${commonMod.prop("fabric_mixin_version")}") {
+		version {
+			strictly("[${commonMod.prop("fabric_mixin_version")},)")
+			prefer(commonMod.prop("fabric_mixin_version"))
+		}
+	}
+	jarJar("io.github.llamalad7:mixinextras-neoforge:${commonMod.prop("mixinextras_version")}") {
+		version {
+			strictly("[${commonMod.prop("mixinextras_version")},)")
+			prefer(commonMod.prop("mixinextras_version"))
+		}
+	}
 }
 
 neoForge {
