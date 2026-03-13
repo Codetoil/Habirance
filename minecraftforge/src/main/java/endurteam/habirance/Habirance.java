@@ -23,7 +23,6 @@ package endurteam.habirance;
 import com.mojang.logging.LogUtils;
 import endurteam.habirance.world.biome.TropicalCaveRegion;
 import endurteam.habirance.world.item.ModItems;
-import endurteam.habirance.world.biome.ModBiomes;
 import endurteam.habirance.world.level.block.ModBlocks;
 import endurteam.habirance.world.level.levelgen.feature.ModFeatures;
 import net.minecraft.resources.ResourceLocation;

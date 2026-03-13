@@ -36,21 +36,21 @@ dependencies {
 		}
 	})
 
-	compileOnly("net.fabricmc:sponge-mixin:${commonMod.prop("fabric_mixin_version")}")
+	api("net.fabricmc:sponge-mixin:${commonMod.prop("fabric_mixin_version")}")
 
 	"io.github.llamalad7:mixinextras-common:${commonMod.prop("mixinextras_version")}".let {
-		compileOnly(it)
+		api(it)
 		annotationProcessor(it)
 	}
 
-	modCompileOnly("com.github.glitchfiend:TerraBlender-common:${commonMod.minecraft_version}-${commonMod.prop("terrablender_version")}")
+	modApi("com.github.glitchfiend:TerraBlender-common:${commonMod.minecraft_version}-${commonMod.prop("terrablender_version")}")
 
 	if (stonecutter.eval(stonecutter.current.version, ">=1.20.6"))
 	{
-		modCompileOnly("software.bernie.geckolib:geckolib-common-${commonMod.minecraft_version}:${commonMod.prop("geckolib_version")}")
+		modApi("software.bernie.geckolib:geckolib-common-${commonMod.minecraft_version}:${commonMod.prop("geckolib_version")}")
 	} else {
-		modCompileOnly("software.bernie.geckolib:geckolib-fabric-${commonMod.minecraft_version}:${commonMod.prop("geckolib_version")}")
-		compileOnly("com.eliotlash.mclib:mclib:20")
+		modApi("software.bernie.geckolib:geckolib-fabric-${commonMod.minecraft_version}:${commonMod.prop("geckolib_version")}")
+		implementation("com.eliotlash.mclib:mclib:20")
 	}
 }
 
